@@ -1,0 +1,52 @@
+[{
+        "id": 1,
+        "name": "Ryan",
+        "modality": 1,
+        "address": "1255 19th St, Denver, CO 80202",
+        "phone": "7202547065",
+        "company": "Mountain interactive",
+        "lat": 39.752947,
+        "lng": -104.992595
+
+    }, {
+        "id": 2,
+        "name": "Casey",
+        "modality": 1,
+        "address": "1644 Platte St, Denver, CO 80202",
+        "phone": "7205554011",
+        "company": "Galvanize",
+        "lat": 39.764186,
+        "lng": -105.005581
+    },
+    {
+        "id": 3,
+        "name": "Matt",
+        "modality": 3,
+        "address": "701 S Franklin St, Denver, CO 80209",
+        "phone": "7205554011",
+        "company": "Galvanize",
+        "lat": 39.738622,
+        "lng": -104.958729
+
+    },
+    {
+        "id": 4,
+        "name": "Macy",
+        "modality": 4,
+        "address": "1644 Platte St, Denver, CO 80202",
+        "phone": "7205554011",
+        "company": "Galvanize",
+        "lat": 39.732532,
+        "lng": -105.070279
+    }, {
+        "id": 5,
+        "name": "Lacey",
+        "modality": 2,
+        "address": "1644 Platte St, Denver, CO 80202",
+        "phone": "7205554011",
+        "company": "Galvanize",
+        "lat": 39.748851,
+        "lng": -105.212147
+    }
+
+]
