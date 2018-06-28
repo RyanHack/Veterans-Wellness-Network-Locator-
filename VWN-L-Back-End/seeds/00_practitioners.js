@@ -61,8 +61,8 @@ exports.seed = function (knex, Promise) {
           address: "Lakewood,CO",
           phone: "303-621-6761",
           company: "Mountain Muse Therapy",
-          lat: 39.703074,
-          lng: -105.084363
+          lat: 39.765191,
+          lng: -104.966998
         }, {
           id: 7,
           name: "Jerry Munson",
@@ -81,16 +81,16 @@ exports.seed = function (knex, Promise) {
           company: " ",
           lat: 39.697635,
           lng: -105.083172
-        } //, {
-        //   id: 9,
-        //   name: "Dawn Essig LMT, TTT",
-        //   modality: 1,
-        //   address: "1075 S Yukon Street Suite 320 Lakewood, CO 80226",
-        //   phone: "303-918-5125",
-        //   company: "Director of The Body Mechanic Veterans’ Wellness Network",
-        //   lat: 39.697552,
-        //   lng: -105.082955
-        // }
+        }, {
+          id: 9,
+          name: "Ryan Hackemer",
+          modality: 1,
+          address: "1075 S Yukon Street Suite 320 Lakewood, CO 80226",
+          phone: "303-918-5125",
+          company: "Director of The Body Mechanic Veterans’ Wellness Network",
+          lat: 39.629168,
+          lng: -104.901771
+        }
       ]);
     }).then(() => {
       return knex.raw('ALTER SEQUENCE practitioners_id_seq RESTART WITH 10;');
