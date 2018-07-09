@@ -4,20 +4,26 @@ import Header from './Components/Header'
 import Form from './Components/Form'
 import Footer from './Components/Footer'
 
-import 'bulma/css/bulma.css'  //must be in this format because create-react-app doesn't play well with sass files
 
+var styles = {
+  width: '800px',
+  margin: '400px'
+};
 
 
 class App extends Component {
 
 
+
   render() {
     return (
-      <div className="App">
-        <Header />
-        <Form />
-        <Footer />
-      </div>
+      <React.Fragment>
+        <div className="App" style={styles}>
+          <Header />
+          <Form />
+          <Footer />
+        </div>
+      </React.Fragment>
     );
   }
 }

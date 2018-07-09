@@ -32,6 +32,7 @@ class Form extends React.Component {
         event.preventDefault()
         let treatment = this.refs.select
         let treatmentId = treatment.value
+
         // console.log("logged:", typeof treatmentId, treatmentId)
         //SWITCH STATEMENT///
         switch (treatmentId) {
@@ -50,12 +51,12 @@ class Form extends React.Component {
                     modality: 3
                 })
                 break;
-            case '4':
-                this.setState({
-                    modality: 4
-                })
+            // case '4':
+            //     this.setState({
+            //         modality: 4
+            //     })
 
-                break;
+            //     break;
             default: this.setState({
                 modality: 0
             })
@@ -67,6 +68,7 @@ class Form extends React.Component {
     render() {
         return (
             <React.Fragment>
+
                 <form onSubmit={event => this.handleSubmit(event)}>
                     <label htmlFor='treatment'>What are you searching for  </label>
                     <select name='treatment' ref='select'>
@@ -74,7 +76,7 @@ class Form extends React.Component {
                         <option value='1'>Massage Therapy</option>
                         <option value='2'>Hypnotherapy</option>
                         <option value='3'>Energy Work</option>
-                        <option value='4'>All</option>
+                        {/* <option value='4'>All</option> */}
                     </select>
                     <br />
                     <input type="submit" name="submit" value="Submit" onClick={this.handleSubmit} />

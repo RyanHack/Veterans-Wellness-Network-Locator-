@@ -16,11 +16,11 @@ const MapWithAMakredInfoWindow = compose(
     withScriptjs,
     withGoogleMap
 )(props => {
+    console.log(props.modality)
     const popuMap = props.therapists.map((therapist) => {
         if (props.modality === therapist.modality) {
             return (
                 <React.Fragment key={therapist.id}>
-
 
                     {props.isMarkerShown && <Marker
 
@@ -36,7 +36,7 @@ const MapWithAMakredInfoWindow = compose(
 
             )
 
-        } else if (props.modality === 4) {
+        } else if (props.modality === 0 /*or 4??*/) {
 
         }
     }
